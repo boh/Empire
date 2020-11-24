@@ -150,6 +150,8 @@ if ls /usr/bin/ | grep -q "python3"; then
 	sudo pip3 install -r $Pip_file
 fi
 
+export STAGING_KEY="e99a18c428cb38d5f260853678922e03"
+
 # set up the database schema
 python3 ./setup_database.py
 
